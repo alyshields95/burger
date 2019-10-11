@@ -29,7 +29,6 @@ $(document).ready(function () {
 
             $.post("/api/devour", { id: uuid }).then(results => {
                 console.log(results);
-                // const { uuid, burger_name, devoured, ...rest } = results;
                 devourBurger(parent);
             }).catch(err => {
                 console.log(err);
@@ -59,13 +58,7 @@ $(document).ready(function () {
         burgerDiv.hide();
 
         addBurger(uuid, name, true);
-        // const burger = $("div.burgerDiv").attr("data-id", `${uuid}`);
 
-        // const name = burger.attr("data-name");
-
-        // if ($(`burgerDiv.${uuid}`)) $(`burgerDiv.${uuid}`).hide();
-
-        // addBurger(uuid, burger_name, true);
     }
 
     $("a.burgerSubmit").on("click", function (e) {
