@@ -1,0 +1,36 @@
+
+div.container {
+    height: 97vh;
+}
+
+div.devoured, div.notDevoured {
+    background-color: rgb(76, 0, 126);
+    color: #fff;
+    margin-top: 1rem;
+    min-height: 400px !important;
+}
+
+div.burgerDiv {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div.burger {
+    border-radius: 2px;
+    padding: .5rem;
+    margin-right: 1rem;
+    font-size: 1.2rem;
+}
+
+div.inputCard {
+    height: 8rem;
+}
+
+div.burgerInputDiv * {
+    background-color: #000;
+    color: #fff;
+    min-height: 400px;
+}

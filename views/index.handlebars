@@ -1,0 +1,35 @@
+<div class="container home">
+    <div class="row">
+        <div class="flow-text col s4 notDevoured">
+            <p>Not Devoured</p>
+            {{#each burgers}}
+            {{#unless devoured}}
+            {{> burgers/burger-block}}
+            {{/unless}}
+            {{/each}}
+        </div>
+        <div class="homePage col s4">
+            <div class="card black darken-1">
+                <div class="card-content white-text">
+                    <span class="flow-text card-title">Welcome</span>
+                    <p class="flow-text">Add a Burger</p>
+                </div>
+                <div class="card-action">
+                    <div class="burgerInput input-field white-text col s12">
+                        <input class="white-text" id="burger_name" type="text">
+                        <label for="burger_name">Burger</label>
+                    </div>
+                    <a href="#" class="burgerSubmit waves-effect waves-light btn">submit</a>
+                </div>
+            </div>
+        </div>
+        <div class="flow-text col s4 devoured">
+            <p>Devoured</p>
+            {{#each burgers}}
+            {{#if devoured}}
+            {{> burgers/burger-block}}
+            {{/if}}
+            {{/each}}
+        </div>
+    </div>
+</div>
